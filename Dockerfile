@@ -9,7 +9,7 @@ RUN groupadd -r spring && useradd -r -g spring spring
 USER spring:spring
 
 # Copy the JAR file from target directory
-COPY target/cicd-demo-1.0.0.jar app.jar
+COPY target/cicd-demo-1.0.0-jar-with-dependencies.jar app.jar
 
 # Expose port (if your app uses web services)
 # EXPOSE 8080
